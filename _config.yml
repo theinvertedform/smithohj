@@ -7,6 +7,7 @@ baseurl: ""
 url: "" # http://example.com
 twitter_username: NewsNorthstar
 github_username:  theinvertedform
+permalink: /:year/:month/:title
 
 # Build settings
 theme: minima
@@ -14,11 +15,23 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives
 
 # Collections
 collections:
     authors:
       output: true
+
+# Arhives
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 defaults:
   - scope:

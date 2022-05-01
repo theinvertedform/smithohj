@@ -1,6 +1,8 @@
 ---
 title: "Declaration of the Editorial Board of Iskra"
 author: iskra
+tags: ["russia", "manifesto", "leninism"]
+category: editorial
 ---
 
 In undertaking the publication of a political newspaper, Iskra, we consider it necessary to say a few words concerning the objects for which we are striving and the understanding we have of our tasks.

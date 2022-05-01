@@ -2,6 +2,8 @@
 title: "Analysis Of The Classes In Chinese Society"
 author: mao
 date: "March 1926"
+tags: ["china", "maoism", "social investigation"]
+category: features
 ---
 
 Who are our enemies? Who are our friends? This is a question of the first importance for the revolution. The basic reason why all previous revolutionary struggles in China achieved so little was their failure to unite with real friends in order to attack real enemies. A revolutionary party is the guide of the masses, and no revolution ever succeeds when the revolutionary party leads them astray. To ensure that we will definitely achieve success in our revolution and will not lead the masses astray, we must pay attention to uniting with our real friends in order to attack our real enemies. To distinguish real friends from real enemies, we must make a general analysis of the economic status of the various classes in Chinese society and of their respective attitudes towards the revolution.
