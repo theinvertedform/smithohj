@@ -1,9 +1,7 @@
 ---
-layout: default
 title: Home of the Northstar
 ---
 
-<ul>
 {% for category in site.categories %}
   <li><a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
@@ -13,7 +11,6 @@ title: Home of the Northstar
     </ul>
   </li>
 {% endfor %}
-</ul>
 
 <ul>
   {% for post in site.posts %}

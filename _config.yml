@@ -49,6 +49,13 @@ defaults:
     values:
       layout: "default"
 
+# Minima
+header_pages:
+  - about.md
+  - blog.md
+  - index.md
+
+
 
 exclude:
   - .sass-cache/
