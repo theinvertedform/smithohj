@@ -1,5 +1,5 @@
 ---
-title: Latest
+title: Blog
 permalink: /blog
 ---
 <h1>Latest Posts</h1>

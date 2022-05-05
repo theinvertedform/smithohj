@@ -1,11 +1,11 @@
 # Site settings
-title: The North Star
-email: northstar@northstarmag.com
+title: The Personal Website of John Smith
+email: webmaster@johnsmith.site
 description: >- # this means to ignore newlines until "baseurl:"
-  A new media going against the grain of the corporate press and the elites.
+  The personal website and blog of Mr. John Smith.
 baseurl: ""
 url: "" # http://example.com
-twitter_username: NewsNorthstar
+twitter_username: palaces_of_gold
 github_username:  theinvertedform
 permalink: /:year/:month/:title
 
@@ -53,9 +53,7 @@ defaults:
 header_pages:
   - about.md
   - blog.md
-  - index.md
-
-
+  - archive.md
 
 exclude:
   - .sass-cache/
