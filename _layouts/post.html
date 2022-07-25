@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign author = site.data.authors[page.author] %}
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -10,10 +12,10 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-      {%- if page.author -%}
-	  • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="/authors/#{{ page.author | slugify }}">{{ page.author }}</a></span></span>
+      {%- if author -%}
+	  • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="/authors/#{{ page.author | slugify }}">{{ author.name }}</a></span></span>
 		{% else %}
-		• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{ page.author.url }}">{{ site.author.name }}</a></span></span>
+		• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="/about">{{ site.author.name }}</a></span></span>
       {%- endif -%}
 {% if page.tags.size > 0 %}
 • <span itemprop="category" itemscope itemtype="http://schema.org/Category"><span class="p-author h-card" itemprop="category">Tag{% if page.tags.size > 1 %}s{% endif %}</span></span>:

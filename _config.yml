@@ -21,8 +21,8 @@ plugins:
 
 # Collections
 collections:
-    authors:
-      output: true
+  #authors:
+  #    output: true
 
 # Arhives
 jekyll-archives:
