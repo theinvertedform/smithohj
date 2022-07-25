@@ -1,6 +1,8 @@
 # Site settings
 title: The Personal Website of John Smith
-email: webmaster@johnsmith.site
+author:
+  name: John Smith
+  email: webmaster@johnsmith.site
 description: >- # this means to ignore newlines until "baseurl:"
   The personal website and blog of Mr. John Smith.
 baseurl: ""
@@ -51,9 +53,10 @@ defaults:
 
 # Minima
 header_pages:
-  - about.md
+  - resume.md
   - blog.md
-  - archive.md
+  - gallery.md
+  - about.md
 
 exclude:
   - .sass-cache/

@@ -1,5 +1,5 @@
 ---
-short_name: Lenin
+short_name: lenin
 name: Vladimir Ilyich Ulyanov
 ---
 

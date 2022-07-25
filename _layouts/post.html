@@ -11,12 +11,21 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+	  • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="/authors/#{{ page.author | slugify }}">{{ page.author }}</a></span></span>
+		{% else %}
+		• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{ page.author.url }}">{{ site.author.name }}</a></span></span>
+      {%- endif -%}
+{% if page.tags.size > 0 %}
+• <span itemprop="category" itemscope itemtype="http://schema.org/Category"><span class="p-author h-card" itemprop="category">Tag{% if page.tags.size > 1 %}s{% endif %}</span></span>:
+	{% for tag in page.tags %}<a href="/tags#{{ tag | slugify }}">{{ tag }}&nbsp;</a>{% endfor %}
+{% endif %}
+	</p>
   </header>
+
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+
   </div>
 
   {%- if site.disqus.shortname -%}

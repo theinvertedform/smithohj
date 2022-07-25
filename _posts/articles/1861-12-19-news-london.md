@@ -2,7 +2,7 @@
 title: The News and its Effect in London
 author: marx
 tags: ["news", "marxism", "london"]
-category: article
+category: articles
 ---
 
 Since the declaration of war against Russia I never witnessed an excitement throughout all the strata of English society equal to that produced by the news of the Trent affair, conveyed to Southampton by the La Plata on the 27th inst. At about 2 o'clock p.m., by means of the electric telegraph, the announcement of the “untoward event” was posted in the news-rooms of all the British Exchanges. All commercial securities went down, while the price of saltpeter went up. Consols declined ¾ per cent, while at Lloyds war risks of five guineas were demanded on vessels from New-York. Late in the evening the wildest rumors circulated in London, to the effect that the American Minister had forthwith been sent his passports, that orders had been issued for the immediate seizure of all American ships in the ports of the United Kingdom, and so forth. The cotton friends of Secession at Liverpool improved the opportunity for holding, at ten minutes’ notice, in the cotton salesroom of the Stock Exchange, an indignation meeting, under the presidency of Mr. Spence, the author of some obscure pamphlet in the interest of the Southern Confederacy. Commodore Williams, the Admiralty Agent on board the Trent, who had arrived with the La Plata, was at once summoned to London.

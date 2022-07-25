@@ -2,13 +2,13 @@
 title: Blog
 permalink: /blog
 ---
-<h1>Latest Posts</h1>
+Rolling index of blog posts. For a list of contributors, [see here](/authors).
 
-<ul>
+<article>
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+      <date>{{ post.date | date: "%b %-d, %Y" }}</date>
+      <a href="{{ post.url }}">{{ post.title }}</a>{% if post.author != page.author %} by {{ post.author | capitalize }}{% endif %}
+      <p>{{ post.excerpt }}</p>
   {% endfor %}
-</ul>
+</article>
+
