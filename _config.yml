@@ -1,10 +1,10 @@
 # Site settings
-title: The Personal Website of John Smith
+title: Smith OHJ
 author:
   name: John Smith
   email: webmaster@johnsmith.site
 description: >- # this means to ignore newlines until "baseurl:"
-  The personal website and blog of Mr. John Smith.
+  Smith OHJ
 baseurl: ""
 url: "" # http://example.com
 twitter_username: palaces_of_gold
@@ -21,8 +21,6 @@ plugins:
 
 # Collections
 collections:
-  #authors:
-  #    output: true
 
 # Arhives
 jekyll-archives:
@@ -36,11 +34,6 @@ jekyll-archives:
     category: '/category/:name/'
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"
