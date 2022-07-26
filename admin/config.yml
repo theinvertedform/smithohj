@@ -3,12 +3,15 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: 'assets/images'
+
+publish_mode: 'editorial_workflow'
+media_folder: 'assets/img'
+
 collections:
   - name: 'blog'
     label: 'Blog'
     folder: '_posts/'
-    create: 'true'
+    create: true
     fields:
       - { name: Title }
       - { name: Author }

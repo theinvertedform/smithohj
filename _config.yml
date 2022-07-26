@@ -20,7 +20,7 @@ plugins:
   - jekyll-archives
 
 # Collections
-collections:
+# collections:
 
 # Arhives
 jekyll-archives:
