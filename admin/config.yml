@@ -12,9 +12,23 @@ collections:
     label: 'Blog'
     folder: '_posts/'
     create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+  label: 'Pages'
+  editor:
+    preview: false
+  files:
+    - label: 'About Page'
+      name: 'about'
+      file: 'about.md'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
+        - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
+        - { label: 'Body', name: 'body', widget: 'markdown' }
