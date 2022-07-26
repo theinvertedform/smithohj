@@ -43,6 +43,10 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: "_posts/*.md"
+    values:
+      category: "blog"
 
 # Minima
 header_pages:
