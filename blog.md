@@ -2,7 +2,7 @@
 title: Blog
 permalink: /blog
 ---
-Rolling index of blog posts. For a list of contributors, [see here](/authors)!
+Rolling index of blog posts. For a list of contributors, [see here](/authors).
 
 {% for post in site.posts %}
 <article>
