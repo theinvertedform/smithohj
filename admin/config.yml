@@ -12,27 +12,47 @@ media_library:
       publicKey: demopublickey
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  - name: "posts"
+    label: "Posts"
+    label_singular: 'Post'
+    folder: "_posts/"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
+    # adding a nested object will show the collection folder structure
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'pages'
-    label: 'Pages'
-    editor:
-      preview: false
-    files:
-      - label: 'About Page'
-        name: 'about'
-        file: 'about.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
-          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+
+    #  - name: 'blog'
+    #    label: 'Blog'
+    #    folder: '_posts/'
+    #    create: true
+    #    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    #    editor:
+    #      preview: false
+    #    fields:
+    #      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+    #      - { label: 'Title', name: 'title', widget: 'string' }
+    #      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+    #      - { label: 'Body', name: 'body', widget: 'markdown' }
+    #  - name: 'pages'
+    #    label: 'Pages'
+    #    editor:
+    #      preview: false
+    #    files:
+    #      - label: 'About Page'
+    #        name: 'about'
+    #        file: 'about.md'
+    #        fields:
+    #          - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
+    #          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
+    #          - { label: 'Body', name: 'body', widget: 'markdown' }
