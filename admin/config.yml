@@ -36,7 +36,17 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
       - { label: 'Categories', name: 'categories', widget: 'string', required: true }
-      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      #- { label: 'Tags', name: 'tags', widget: 'list', required: false }
+	  - { 
+		  label: "Tags"
+	      name: "tags"
+	      widget: "relation"
+	      collection: "relation_files"
+	      file: "tags"
+	      search_fields: ["tags.*.name"]
+	      display_fields: ["tags.*.name"]
+	      value_field: "tags.*.id"
+		}
       - {
           label: 'Publish Date',
           name: 'date',
