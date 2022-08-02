@@ -22,3 +22,9 @@ hegel:
   name: Georg Wilhelm Friedrich Hegel
   short_name: hegel
   bio: Hegel reached too high in his phenomenology of *Geist*, and Marx needed to bring him down from the stars.
+
+webmaster:
+  name: The Webmaster
+  short_name: webmaster
+  bio: Runs the smithohj.info web experience.
+  url: authors#webmaster

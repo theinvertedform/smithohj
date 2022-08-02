@@ -6,14 +6,12 @@ Rolling index of blog posts. For a list of contributors, [see here](/authors).
 
 {% for post in site.posts %}
 <article>
-	<date>{{ post.date | date: "%b %-d, %Y" }}</date>
-	<a href="{{ post.url }}">{{ post.title }}</a>
 	{% assign author = site.data.authors[post.author] %}
-	{% if author %}
-	by {{ author.name }}
-	{% else %}
-	by {{ site.author.name }}
-	{% endif %}
-    <p>{{ post.excerpt }}</p>
+	<a href="/categories#{{ post.category }}">{{ post.category | capitalize }}</a> —
+	<a href="{{ post.url }}">{{ post.title }}</a>{% if author %},
+	by <a href="/authors#{{ author.short_name | slugify }}">{{ author.name }}.</a>
+	{% endif %}<br>
+	Posted on <date>{{ post.date | date: "%b %-d, %Y" }}</date>{% if post.origdate %}, originally published <date>{{ post.date | date: "%b %-d, %Y" }}</date>. {% else %}. {% endif %}
+	<p><emph>{{ post.excerpt | strip_html }}</emph></p>
 </article>
 {% endfor %}

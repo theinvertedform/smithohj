@@ -9,7 +9,7 @@ baseurl: ""
 url: "" # http://example.com
 twitter_username: 
 github_username:  theinvertedform
-permalink: /:year/:month/:title
+permalink: /:categories/:title
 
 # Build settings
 theme: minima
@@ -17,21 +17,24 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-archives
+    #- jekyll-archives
 
 # Collections
-# collections:
+#collections:
+#  authors:
+#    output: false
+#    permalink: authors#/:short_name
 
 # Arhives
-jekyll-archives:
-  enabled: all
-  layout: archive
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
+# jekyll-archives:
+#   enabled: all
+#   layout: archive
+#   permalinks:
+#     year: '/:year/'
+#     month: '/:year/:month/'
+#     day: '/:year/:month/:day/'
+#     tag: '/tag/:name/'
+#     category: '/category/:name/'
 
 defaults:
   - scope:
@@ -39,14 +42,21 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      category: "blog"
   - scope:
       path: ""
     values:
       layout: "default"
-  - scope:
-      path: "_posts/*.md"
-    values:
-      category: "blog"
+      #  - scope:
+      #      path: "_posts/*.md"
+      #    values:
+      #      category: "blog"
+      #  - scope:
+      #      path: ""
+      #      type: "authors"
+      #    values:
+      #      layout: "author"
+      #      url: "/authors#/{{ short_name }}"
 
 # Minima
 header_pages:
