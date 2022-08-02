@@ -50,7 +50,7 @@ collections:
         tagname: ''
 
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
-    meta: { path: { widget: string, label: 'Path', index_file: 'index', default: 'blog/title' } }
+    meta: { path: { widget: string, label: 'Path', index_file: 'index', default: /blog } }
 
         #  - name: "posts"
         #    label: "Posts"
