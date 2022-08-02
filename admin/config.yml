@@ -17,7 +17,7 @@ collections:
     label_singular: 'Post' # Used in the UI, ie: "New Post"
     description: >
       Posts on smithohj.info.
-    folder: '_posts/*.md'
+    folder: '_posts/'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true # Allow users to create new documents in this collection
     view_filters:
