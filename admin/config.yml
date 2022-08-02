@@ -30,6 +30,8 @@ collections:
         pattern: \d{4}
       - label: Drafts
         field: draft
+    nested:
+      depth: 100
     fields: # The fields each document in this collection have
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
@@ -48,6 +50,7 @@ collections:
         tagname: ''
 
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
 
         #  - name: "posts"
         #    label: "Posts"
