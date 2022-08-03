@@ -140,6 +140,7 @@ collections:
           - name: categories
             widget: list
             summary: '{{fields.name}}'
+            create: true
             fields:
               - {name: name}
           - name: tags
