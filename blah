@@ -12,14 +12,14 @@ media_library:
       publicKey: demopublickey
 
 collections:
-  - name: 'posts'
-    label: 'Posts'
-    label_singular: 'Post'
+  - name: 'posts' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Posts' # Used in the UI
+    label_singular: 'Post' # Used in the UI, ie: "New Post"
     description: >
       Posts on smithohj.info.
     folder: '_posts/'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    create: true
+    create: true # Allow users to create new documents in this collection
     nested:
       depth: 100
     fields: # The fields each document in this collection have
@@ -35,21 +35,21 @@ collections:
         search_fields: [categories.*.name]
         display_fields: [categories.*.name]
       #- { label: 'Tags', name: 'tags', widget: 'list', required: false }
-      #  - { 
-      #      label: "Tags",
-      #      name: "tags",
-      #      widget: "list",
-      #      summary: 'tags',
-      #      fields:
-      #        - { 
-      #            name: 'tags',
-      #            widget: 'relation',
-      #            collection: 'settings',
-      #            file: 'blog_settings',
-      #            search_fields: ["tags.*.name"],
-      #            display_fields: ["tags.*.name"],
-      #            value_field: "tags.*.id" },
-      #          }
+      - { 
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          summary: 'tags',
+          fields:
+            - { 
+                name: 'tags',
+                widget: 'relation',
+                collection: 'settings',
+                file: 'blog_settings',
+                search_fields: ["tags.*.name"],
+                display_fields: ["tags.*.name"],
+                value_field: "tags.*.id" },
+              }
       - {
           label: 'Publish Date',
           name: 'date',
