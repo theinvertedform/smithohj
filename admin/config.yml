@@ -39,8 +39,8 @@ collections:
           label: "Tags",
           name: "tags",
           widget: "relation",
-          collection: "relation_files",
-          file: "tags",
+          collection: settings,
+          file: blog_settings,
           search_fields: ["tags.*.name"],
           display_fields: ["tags.*.name"],
           value_field: "tags.*.id",
@@ -151,4 +151,4 @@ collections:
             widget: list
             summary: '{{fields.name}}'
             fields:
-              - {name: 'name', bio: 'bio', short_name: 'short_name', url: 'url',}
+              - { name: 'name', bio: 'bio', short_name: 'short_name', url: 'url', }
