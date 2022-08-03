@@ -1,7 +1,7 @@
 ---
 title: index
 ---
-This is the personal website of Oliver Smith Jones. I like to post articles that I find interesting for everyone (along with a few 'world-historical' writings of my own). Of course, I need to say that don't necessarily concur with all the views express in such articles but I think everybody should read them because of their signifigance.  Read more about me in the [About](/about) section. Check out my [blog](/blog) for a rolling list of my own writings. If you want to get in touch, please head on over to the [contact](/contact) page. The [Archives](/archives) contains a comprehensive index of blog posts and other writings, arranged by date, category, and tag.
+This is the personal website of Oliver Smith Jones. I like to post articles that I find interesting for everyone (along with a few 'world-historical' writings of my own). Of course, I need to say that don't necessarily concur with all the views express in such articles but I think everybody should read them because of their significance.  Read more about me in the [About](/about) section. Check out my [blog](/blog) for a rolling list of my own writings. If you want to get in touch, please head on over to the [contact](/contact) page. The [Archives](/archives) contains a comprehensive index of blog posts and other writings, arranged by date, category, and tag.
 
 <section id="blog" class="index-category">
 <h3>Blog Posts</h3>
