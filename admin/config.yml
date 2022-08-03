@@ -135,7 +135,7 @@ collections:
     files: 
       - name: blog_settings
         label: Blog settings
-        file: data/blog_settings.yml
+        file: _data/blog_settings.yml
         fields: 
           - name: categories
             widget: list
