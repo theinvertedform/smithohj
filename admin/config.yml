@@ -134,7 +134,7 @@ collections:
       preview: false
     files: 
       - name: blog_settings
-        label: Blog settings
+        label: Blog Settings
         file: _data/blog_settings.yml
         fields: 
           - name: categories
@@ -142,3 +142,13 @@ collections:
             summary: '{{fields.name}}'
             fields:
               - {name: name}
+          - name: tags
+            widget: list
+            summary: '{{fields.name}}'
+            fields:
+              - {name: name}
+          - name: authors
+            widget: list
+            summary: '{{fields.name}}'
+            fields:
+              - {name: 'name', bio: 'bio', short_name: 'short_name', url: 'url',}
