@@ -20,22 +20,20 @@ collections:
     folder: '_posts/'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true # Allow users to create new documents in this collection
-    view_filters:
-      - label: Drafts
-        field: draft
-        pattern: true
-    view_groups:
-      - label: Year
-        field: date
-        pattern: \d{4}
-      - label: Drafts
-        field: draft
     nested:
       depth: 100
     fields: # The fields each document in this collection have
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
-      - { label: 'Categories', name: 'categories', widget: 'string', required: true }
+#      - { label: 'Categories', name: 'categories', widget: 'string', required: true }
+      - label: Category
+        name: category
+        widget: relation
+        collection: settings
+        file: blog_settings
+        value_field: categories.*.name
+        search_fields: [categories.*.name]
+        display_fields: [categories.*.name]
       #- { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - { 
           label: "Tags",
@@ -130,3 +128,17 @@ collections:
           - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: settings
+    label: 'Settings'
+    editor:
+      preview: false
+    files: 
+      - name: blog_settings
+        label: Blog settings
+        file: data/blog_settings.yml
+        fields: 
+          - name: categories
+            widget: list
+            summary: '{{fields.name}}'
+            fields:
+              - {name: name}
