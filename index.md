@@ -1,13 +1,13 @@
 ---
 title: index
 ---
-This is the personal website of Oliver Smith Jones. Read more about me and other contributors to this website in the [About](/about) section. Check out my [blog](/blog) for a rolling list of my writings. If you want to get in touch, head on over to the [contact](/contact) page. The [Archives](/archives) contains a comprehensive index of blog posts and other writings, arranged by date, category, and tag.
+This is the personal website of Oliver Smith Jones. I like to post articles that I find interesting for everyone (along with a few 'world-historical' writings of my own). Of course, I need to say that don't necessarily concur with all the views express in such articles but I think everybody should read them because of their significance.  Read more about me in the [About](/about) section. Check out my [blog](/blog) for a rolling list of my own writings. If you want to get in touch, please head on over to the [contact](/contact) page. The [Archives](/archives) contains a comprehensive index of blog posts and other writings, arranged by date, category, and tag.
 
 <section id="blog" class="index-category">
 <h3>Blog Posts</h3>
 <ul>
 {% for post in site.categories.blog %}
-{% assign author = site.data.authors\[post.author] %}
+{% assign author = site.data.authors\\\[post.author] %}
 <li><a href="{{ post.url }}" title="{{ post.title}}, posted on {{ post.date | date: "%b %-d, %Y" }}">{{ post.title }}</a>{% if author %},
 by <a href="{{ author.url }}">{{ author.name }}.</a>
 {% else %}.{% endif %}
@@ -21,10 +21,10 @@ by <a href="{{ author.url }}">{{ author.name }}.</a>
 {% unless category contains "blog" %}
 
 <section id="{{ category[0] }}" class="index-category">
-<h3>{{ category\[0] | capitalize }}</h3>
+<h3>{{ category\\\[0] | capitalize }}</h3>
 <ul>
-{% for post in category\[1] %}
-{% assign author = site.data.authors\[post.author] %}
+{% for post in category\\\[1] %}
+{% assign author = site.data.authors\\\[post.author] %}
 <li><a href="{{ post.url }}" title="{{ post.title}}, posted on {{ post.date | date: "%b %-d, %Y" }}">{{ post.title }}{% if author %},</a>
 by <a href="/authors#{{ author.short_name | slugify }}">{{ author.name }}.</a>
 {% else %}</a>. {% endif %}
