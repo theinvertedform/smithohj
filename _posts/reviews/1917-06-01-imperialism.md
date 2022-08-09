@@ -1,8 +1,14 @@
 ---
+draft: false
+update: 2022-08-09 17:07
 author: lenin
-title: Imperialism, the Highest Stage of Capitalism
+origdate: 1926-03-01
 subtitle: A Popular Outline
+title: Imperialism, the Highest Stage of Capitalism
 category: reviews
+tags:
+  - communism
+  - russia
 ---
 
 # PREFACE
