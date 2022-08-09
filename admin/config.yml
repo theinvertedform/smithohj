@@ -42,6 +42,7 @@ collections:
         search_fields: [tags.*.name]
         display_fields: [tags.*.name]
         value_field: tags.*.name
+        multiple: true
       - {
           label: 'Publish Date',
           name: 'date',
