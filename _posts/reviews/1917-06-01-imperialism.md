@@ -1,6 +1,6 @@
 ---
 draft: false
-update: 2022-08-09 17:07
+update: 2022-08-09 17:19
 author: lenin
 origdate: 1917-06-01
 subtitle: A Popular Outline
