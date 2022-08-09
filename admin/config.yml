@@ -51,6 +51,13 @@ collections:
           time_format: 'HH:mm',
           format: 'YYYY-MM-DD HH:mm',
         }
+      - {
+          label: 'Original Publication Date',
+          name: 'origdate',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          format: 'YYYY-MM-DD',
+        }
       - label: 'Cover Image'
         name: 'image'
         widget: 'image'

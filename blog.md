@@ -11,7 +11,7 @@ Rolling index of blog posts. For a list of contributors, [see here](/authors).
 	<a href="{{ post.url }}">{{ post.title }}</a>{% if author %},
 	by <a href="/authors#{{ author.short_name | slugify }}">{{ author.name }}.</a>
 	{% endif %}<br>
-	Posted on <date>{{ post.date | date: "%b %-d, %Y" }}</date>{% if post.origdate %}, originally published <date>{{ post.date | date: "%b %-d, %Y" }}</date>. {% else %}. {% endif %}
+	Posted on <date>{{ post.date | date: "%b %-d, %Y" }}</date>{% if post.origdate %}, originally published <date>{{ post.origdate | date: "%b %-d, %Y" }}</date>. {% else %}. {% endif %}
 	<p><emph>{{ post.excerpt | strip_html }}</emph></p>
 </article>
 {% endfor %}
