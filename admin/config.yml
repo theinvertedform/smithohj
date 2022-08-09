@@ -44,8 +44,8 @@ collections:
         value_field: tags.*.name
         multiple: true
       - {
-          label: 'Publish Date',
-          name: 'date',
+          label: 'Date of Current Revision',
+          name: 'update',
           widget: 'datetime',
           date_format: 'YYYY-MM-DD',
           time_format: 'HH:mm',
