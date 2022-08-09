@@ -20,7 +20,9 @@ plugins:
     #- jekyll-archives
 
 # Collections
-#collections:
+# collections:
+#   tags:
+#     name: true
 #  authors:
 #    output: false
 #    permalink: authors#/:short_name

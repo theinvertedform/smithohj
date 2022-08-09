@@ -7,7 +7,7 @@ This is the personal website of Oliver Smith Jones. I like to post articles that
 <h3>Blog Posts</h3>
 <ul>
 {% for post in site.categories.blog %}
-{% assign author = site.data.authors\\\[post.author] %}
+{% assign author = site.data.authors[post.author] %}
 <li><a href="{{ post.url }}" title="{{ post.title}}, posted on {{ post.date | date: "%b %-d, %Y" }}">{{ post.title }}</a>{% if author %},
 by <a href="{{ author.url }}">{{ author.name }}.</a>
 {% else %}.{% endif %}
@@ -21,10 +21,10 @@ by <a href="{{ author.url }}">{{ author.name }}.</a>
 {% unless category contains "blog" %}
 
 <section id="{{ category[0] }}" class="index-category">
-<h3>{{ category\\\[0] | capitalize }}</h3>
+<h3>{{ category[0] | capitalize }}</h3>
 <ul>
-{% for post in category\\\[1] %}
-{% assign author = site.data.authors\\\[post.author] %}
+{% for post in category[1] %}
+{% assign author = site.data.authors[post.author] %}
 <li><a href="{{ post.url }}" title="{{ post.title}}, posted on {{ post.date | date: "%b %-d, %Y" }}">{{ post.title }}{% if author %},</a>
 by <a href="/authors#{{ author.short_name | slugify }}">{{ author.name }}.</a>
 {% else %}</a>. {% endif %}
