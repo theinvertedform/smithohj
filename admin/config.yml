@@ -34,22 +34,14 @@ collections:
         value_field: categories.*.name
         search_fields: [categories.*.name]
         display_fields: [categories.*.name]
-      #- { label: 'Tags', name: 'tags', widget: 'list', required: false }
-      #  - { 
-      #      label: "Tags",
-      #      name: "tags",
-      #      widget: "list",
-      #      summary: 'tags',
-      #      fields:
-      #        - { 
-      #            name: 'tags',
-      #            widget: 'relation',
-      #            collection: 'settings',
-      #            file: 'blog_settings',
-      #            search_fields: ["tags.*.name"],
-      #            display_fields: ["tags.*.name"],
-      #            value_field: "tags.*.id" },
-      #          }
+      - label: Tags
+        name: tags
+        widget: relation
+        collection: settings
+        file: blog_settings
+        search_fields: [tags.*.name]
+        display_fields: [tags.*.name]
+        value_field: tags.*.id
       - {
           label: 'Publish Date',
           name: 'date',
