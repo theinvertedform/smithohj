@@ -1,6 +1,9 @@
 categories:
-  - name: videos
   - name: articles
+  - name: reviews
+  - name: blog
+  - name: features
+  - name: editorial
 tags:
   - name: montreal
   - name: marxism
