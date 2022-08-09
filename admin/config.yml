@@ -150,4 +150,6 @@ collections:
             widget: list
             summary: '{{fields.name}}'
             fields:
-              - { name: 'name', bio: 'bio', short_name: 'short_name', url: 'url', }
+              - { label: "Name", name: "name", widget: "string"}
+              - { label: "Bio", name: "bio", widget: "string"}
+              - { label: "short_name", name: "short_name", widget: "string"}
