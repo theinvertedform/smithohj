@@ -12,3 +12,7 @@ tags:
   - name: meta
   - name: russia
   - name: china
+authors:
+  - name: Karl Marx
+    bio: The father of revolutionary theory.
+    short_name: marx
