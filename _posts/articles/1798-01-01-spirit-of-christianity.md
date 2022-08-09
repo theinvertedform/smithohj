@@ -1,7 +1,8 @@
 ---
 author: hegel
 title: The Spirit of Christianity and its Fate
-tag: philosophy
+tags: 
+  - philosophy
 category: articles
 ---
 

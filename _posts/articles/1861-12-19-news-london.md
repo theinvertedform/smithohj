@@ -1,7 +1,11 @@
 ---
 title: The News and its Effect in London
 author: marx
-tags: ["news", "marxism", "london", "journalism"]
+tags:
+  - news 
+  - marxism
+  - london 
+  - journalism
 category: articles
 origdate: 1861-12-19
 ---
