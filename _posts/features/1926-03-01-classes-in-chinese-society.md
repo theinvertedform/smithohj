@@ -1,8 +1,11 @@
 ---
 title: "Analysis Of The Classes In Chinese Society"
 author: mao
-date: "March 1926"
-tags: ["china", "maoism", "social investigation"]
+origdate: 1926-03-01
+tags:
+  - china
+  - maoism
+  - social investigation
 category: features
 ---
 
