@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 update: 2022-08-09 17:07
 author: lenin
 origdate: 1926-03-01
